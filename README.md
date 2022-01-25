@@ -1,6 +1,6 @@
 # python-algorithm
 * [DFS / BFS](https://github.com/k9want/python-Algorithm/blob/main/DFS_BFS/DFS_BFS.md)
-
+* [백트래킹](https://github.com/k9want/python-Algorithm/blob/main/%EB%B0%B1%ED%8A%B8%EB%9E%98%ED%82%B9/%EB%B0%B1%ED%8A%B8%EB%9E%98%ED%82%B9.md)
 <br>
 
 ### 알고리즘 문제를 풀때
