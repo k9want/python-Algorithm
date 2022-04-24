@@ -7,6 +7,9 @@ result = []만들고 최댓값 비교
 
 """
 
+"""
+내가 푼 방법
+
 n = int(input())
 t = [0]
 p = [0]
@@ -29,4 +32,31 @@ for j in range(1, n+2):
     result = max(result, dp[j])
 
 print(result)
+"""
 
+"""
+더 좋은 방법 
+거꾸로 생각하기
+"""
+
+n = int(input())
+t = []
+p = []
+dp = [0] * (n+1)
+result = 0
+
+for _ in range(n):
+    a, b = map(int, input().split())
+    t.append(a)
+    p.append(b)
+
+for i in range(n-1, -1, -1):
+    time = t[i] + i
+
+    if time > n:
+        dp[i] = result
+    else:
+        dp[i] = max(p[i]+ dp[time], result)
+        result = dp[i]
+
+print(result)
