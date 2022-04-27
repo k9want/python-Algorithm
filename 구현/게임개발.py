@@ -1,3 +1,16 @@
+"""
+4 4
+1 1 0
+1 1 1 1
+1 0 0 1
+1 1 0 1
+1 1 1 1
+
+답:
+3
+"""
+
+
 n, m = map(int, input().split())
 
 x, y, direction = list(map(int,input().split()))
