@@ -30,9 +30,9 @@ def left_index(array, target, start, end):
     if array[mid] == target and (mid == 0 or array[mid-1] < target):
         return mid
     elif array[mid] > target:
-        left_index(array, target, start, mid-1)
+        return left_index(array, target, start, mid-1)
     else:
-        left_index(array, target, mid+1, end)
+        return left_index(array, target, mid+1, end)
 
 #해당 값을 가진 가장 오른쪽 인덱스 찾기
 def right_index(array, target, start, end):
@@ -42,9 +42,9 @@ def right_index(array, target, start, end):
     if array[mid] == target and (mid == end-1 or array[mid+1] > target):
         return mid
     elif array[mid] > target:
-        right_index(array, target, start, mid-1)
+        return right_index(array, target, start, mid-1)
     else:
-        right_index(array, target, mid+1, end)
+        return right_index(array, target, mid+1, end)
 
 
 def count_index(array, target, start, end):
